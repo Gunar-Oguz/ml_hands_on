@@ -5,8 +5,13 @@ import numpy as np
 url = "https://raw.githubusercontent.com/ageron/handson-ml2/refs/heads/master/datasets/housing/housing.csv"
 housing = pd.read_csv(url)
 print(housing.head())
-
-
+print("shape is: ", housing.shape)
+print(housing.info())
+print(housing['ocean_proximity'].value_counts())
+print(housing.columns.to_list())
+print(housing['total_rooms'].value_counts())
+print(housing['housing_median_age'].value_counts())
+print(housing.describe())
 
 
 
